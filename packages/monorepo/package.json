@@ -1,0 +1,41 @@
+{
+	"name": "monorepo",
+	"scripts": {
+		"build": "wireit"
+	},
+	"wireit": {
+		"build": {
+			"command": "tsc -b",
+			"files": [
+				"src/**/*.{js,ts}",
+				"tsconfig.json"
+			],
+			"output": [
+				"types"
+			]
+		},
+		"publint": {
+			"command": "publint",
+			"dependencies": [
+				"build"
+			],
+			"files": [
+				"src/**",
+				"types/**",
+				"package.json"
+			],
+			"output": []
+		},
+		"pre-commit": {
+			"dependencies": [
+				"build",
+				"publint"
+			]
+		}
+	},
+	"devDependencies": {
+		"publint": "^0.2.6",
+		"typescript": "^5.3.3"
+	},
+	"type": "module"
+}

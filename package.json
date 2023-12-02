@@ -1,0 +1,64 @@
+{
+	"name": "monorepo-template",
+	"private": true,
+	"scripts": {
+		"build": "wireit",
+		"format": "wireit",
+		"lint": "wireit",
+		"pre-commit": "wireit"
+	},
+	"wireit": {
+		"build": {
+			"dependencies": [
+				"build:packages",
+				"build:sites"
+			]
+		},
+		"build:packages": {
+			"dependencies": [
+				"./packages/monorepo:build"
+			]
+		},
+		"build:sites": {
+			"dependencies": [
+				"./sites/monorepo:build"
+			]
+		},
+		"format": {
+			"command": "prettier . --write --cache --config ./config/prettier.config.mjs --ignore-path ./config/.prettierignore",
+			"files": [
+				"**/*.{css,html,js,json,md,ts,svelte}",
+				"!packages/*/dist/**",
+				"!packages/*/types/**",
+				"./config/prettier.config.mjs",
+				"./config/.prettierignore"
+			],
+			"output": []
+		},
+		"lint": {
+			"command": "cross-env ESLINT_USE_FLAT_CONFIG=true eslint --color --cache --fix --config ./config/eslint.config.js --cache-location ./config/.eslintcache \"**/*.{js,svelte}\"",
+			"files": [
+				"**/*.{js,svelte}",
+				"!packages/*/dist/**",
+				"!packages/*/types/**",
+				"./config/eslint.config.js"
+			],
+			"output": []
+		},
+		"pre-commit": {
+			"dependencies": [
+				"./packages/monorepo:pre-commit",
+				"./sites/monorepo:pre-commit"
+			]
+		}
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.27.1",
+		"cross-env": "^7.0.3",
+		"eslint": "^8.55.0",
+		"husky": "^8.0.3",
+		"prettier": "^3.1.0",
+		"wireit": "^0.14.1"
+	},
+	"type": "module"
+}
