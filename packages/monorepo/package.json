@@ -33,6 +33,18 @@
 			]
 		}
 	},
+	"exports": {
+		".": {
+			"types": "./types/exports.d.ts",
+			"default": "./src/index.js"
+		}
+	},
+	"files": [
+		"src",
+		"types",
+		"!**/*.test.*",
+		"!**/*.spec.*"
+	],
 	"devDependencies": {
 		"@types/node": "^20.10.5",
 		"publint": "^0.2.6",
