@@ -9,6 +9,7 @@
 		"isolatedModules": true,
 		"module": "esnext",
 		"moduleResolution": "bundler",
+		"preserveWatchOutput": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
 		"sourceMap": true,

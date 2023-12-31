@@ -1,18 +1,28 @@
 {
 	"name": "monorepo",
 	"scripts": {
-		"build": "wireit"
+		"build": "wireit",
+		"dev": "wireit",
+		"pre-commit": "wireit",
+		"publint": "wireit",
+		"test": "wireit"
 	},
 	"wireit": {
 		"build": {
-			"command": "tsc -b",
+			"command": "tsc --build",
 			"files": [
 				"src/**/*.{js,ts}",
-				"tsconfig.json"
+				"tsconfig.json",
+				"../../config/tsconfig.base.json"
 			],
 			"output": [
 				"types"
 			]
+		},
+		"dev": {
+			"command": "tsc --build --watch",
+			"service": true,
+			"files": []
 		},
 		"publint": {
 			"command": "publint",
@@ -29,25 +39,34 @@
 		"pre-commit": {
 			"dependencies": [
 				"build",
-				"publint"
+				"publint",
+				"test"
 			]
+		},
+		"test": {
+			"command": "tsx --test --test-reporter spec",
+			"files": [
+				"src/**/*.{js,ts}",
+				"tests/**/*.{js,ts}"
+			],
+			"output": []
 		}
 	},
 	"exports": {
 		".": {
-			"types": "./types/exports.d.ts",
-			"default": "./src/index.js"
+			"types": "./dist/index.d.ts",
+			"default": "./dist/index.js"
 		}
 	},
 	"files": [
-		"src",
-		"types",
+		"dist",
 		"!**/*.test.*",
 		"!**/*.spec.*"
 	],
 	"devDependencies": {
 		"@types/node": "^20.10.5",
 		"publint": "^0.2.6",
+		"tsx": "^4.7.0",
 		"typescript": "^5.3.3"
 	},
 	"type": "module"
