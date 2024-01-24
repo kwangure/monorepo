@@ -57,7 +57,6 @@
 		"@changesets/cli": "^2.27.1",
 		"cross-env": "^7.0.3",
 		"eslint": "^8.55.0",
-		"husky": "^8.0.3",
 		"prettier": "^3.1.0",
 		"wireit": "^0.14.1"
 	},
