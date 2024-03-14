@@ -3,21 +3,26 @@ import globals from 'globals';
 import prettier from 'eslint-config-prettier';
 import sveltePlugin from 'eslint-plugin-svelte';
 import svelteParser from 'svelte-eslint-parser';
+import tseslint from 'typescript-eslint';
 
 const { browser, es2021, node } = globals;
 
-/** @type {import('eslint').Linter.FlatConfig[]} */
-const config = [
+export default [
 	{
 		ignores: [
-			'**/.svelte-kit/**/*',
-			'**/.wireit/**/*',
-			'**/node_modules/**',
-			'**/dist/**',
+			'**/.svelte-kit/',
+			'**/.wireit/',
+			'**/dist/',
+			'**/packages/*/.types/',
+			'**/packages/*/public/',
+			'**/root/',
+			'**/build/',
+			'**/tmp/',
 		],
 	},
+	js.configs.recommended,
+	...tseslint.configs.recommended,
 	{
-		files: ['**/*.js', '**/*.mjs', '**/*.cjs'],
 		languageOptions: {
 			globals: {
 				...browser,
@@ -26,8 +31,14 @@ const config = [
 			},
 		},
 		rules: {
-			...js.configs.recommended.rules,
 			'no-unused-vars': [
+				'error',
+				{
+					argsIgnorePattern: '^_',
+					args: 'all',
+				},
+			],
+			'@typescript-eslint/no-unused-vars': [
 				'error',
 				{
 					argsIgnorePattern: '^_',
@@ -39,9 +50,18 @@ const config = [
 		},
 	},
 	{
+		files: ['**/*.js', '**/*.ts', '**/*.mjs', '**/*.cjs'],
+		languageOptions: {
+			globals: {
+				...browser,
+				...es2021,
+				...node,
+			},
+		},
+	},
+	{
 		files: ['**/*.svelte'],
 		languageOptions: {
-			// @ts-expect-error
 			parser: svelteParser,
 			globals: {
 				...browser,
@@ -49,7 +69,6 @@ const config = [
 			},
 		},
 		plugins: {
-			// @ts-expect-error
 			svelte: sveltePlugin,
 		},
 		rules: {
@@ -61,5 +80,3 @@ const config = [
 		},
 	},
 ];
-
-export default config;
