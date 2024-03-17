@@ -63,6 +63,9 @@ export default [
 		files: ['**/*.svelte'],
 		languageOptions: {
 			parser: svelteParser,
+			parserOptions: {
+				parser: '@typescript-eslint/parser',
+			},
 			globals: {
 				...browser,
 				...es2021,
