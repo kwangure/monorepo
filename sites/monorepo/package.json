@@ -26,8 +26,9 @@
 			]
 		},
 		"check": {
-			"command": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+			"command": "svelte-check --tsconfig ./tsconfig.json",
 			"dependencies": [
+				"sync",
 				"../../packages/monorepo:build"
 			],
 			"files": [
@@ -57,8 +58,19 @@
 			"files": [],
 			"output": []
 		},
+		"sync": {
+			"command": "svelte-kit sync",
+			"files": [
+				"src/**/*.{js,ts,svelte}",
+				"tsconfig.json"
+			],
+			"output": []
+		},
 		"test": {
 			"command": "tsx --test --test-reporter spec",
+			"dependencies": [
+				"sync"
+			],
 			"files": [
 				"src/**/*.{js,ts}",
 				"tests/**/*.{js,ts}"
