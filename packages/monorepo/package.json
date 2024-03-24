@@ -44,7 +44,7 @@
 			]
 		},
 		"test": {
-			"command": "tsx --test --test-reporter spec",
+			"command": "vitest run",
 			"files": [
 				"src/**/*.{js,ts}",
 				"tests/**/*.{js,ts}"
@@ -66,8 +66,8 @@
 	"devDependencies": {
 		"@types/node": "^20.10.5",
 		"publint": "^0.2.6",
-		"tsx": "^4.7.0",
-		"typescript": "^5.3.3"
+		"typescript": "^5.3.3",
+		"vitest": "^1.4.0"
 	},
 	"type": "module"
 }
