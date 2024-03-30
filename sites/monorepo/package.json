@@ -79,7 +79,7 @@
 		}
 	},
 	"dependencies": {
-		"@svelte-thing/components": "^0.0.13"
+		"@svelte-thing/components": "^0.0.14"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
