@@ -66,8 +66,8 @@ importers:
   sites/monorepo:
     dependencies:
       '@svelte-thing/components':
-        specifier: ^0.0.14
-        version: 0.0.14(@fig/lezer-bash@1.2.5)(@lezer/common@1.2.0)(@lezer/cpp@1.1.2)(@lezer/css@1.1.5)(@lezer/highlight@1.2.0)(@lezer/html@1.3.8)(@lezer/javascript@1.4.11)(@lezer/json@1.0.2)(@lezer/lr@1.3.14)(@lezer/python@1.1.10)(@lezer/rust@1.0.2)(@replit/codemirror-lang-svelte@6.0.0)(@sveltejs/kit@2.0.2)(svelte@4.2.8)
+        specifier: ^0.0.19
+        version: 0.0.19(@fig/lezer-bash@1.2.5)(@lezer/common@1.2.0)(@lezer/cpp@1.1.2)(@lezer/css@1.1.5)(@lezer/highlight@1.2.0)(@lezer/html@1.3.8)(@lezer/javascript@1.4.11)(@lezer/json@1.0.2)(@lezer/lr@1.3.14)(@lezer/python@1.1.10)(@lezer/rust@1.0.2)(@replit/codemirror-lang-svelte@6.0.0)(@sveltejs/kit@2.0.2)(svelte@4.2.8)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
@@ -79,8 +79,8 @@ importers:
         specifier: ^3.0.0
         version: 3.0.1(svelte@4.2.8)(vite@5.0.10)
       content-thing:
-        specifier: ^0.0.15
-        version: 0.0.15(@sveltejs/kit@2.0.2)
+        specifier: ^0.0.16
+        version: 0.0.16(@sveltejs/kit@2.0.2)
       svelte:
         specifier: ^4.2.7
         version: 4.2.8
@@ -879,6 +879,23 @@ packages:
       '@lezer/lr': 1.3.14
     dev: false
 
+  /@floating-ui/core@1.6.0:
+    resolution: {integrity: sha512-PcF++MykgmTj3CIyOQbKA/hDzOAiqI3mhuoN44WRCopIs1sgoDoU4oty4Jtqaj/y3oDU6fnVSm4QG0a3t5i0+g==}
+    dependencies:
+      '@floating-ui/utils': 0.2.1
+    dev: false
+
+  /@floating-ui/dom@1.6.3:
+    resolution: {integrity: sha512-RnDthu3mzPlQ31Ss/BTwQ1zjzIhr3lk1gZB1OC56h/1vEtaXkESrOqL5fQVMfXpwGtRwX+YsZBdyHtJMQnkArw==}
+    dependencies:
+      '@floating-ui/core': 1.6.0
+      '@floating-ui/utils': 0.2.1
+    dev: false
+
+  /@floating-ui/utils@0.2.1:
+    resolution: {integrity: sha512-9TANp6GPoMtYzQdt54kfAyMmz1+osLlXdg2ENroU7zzrtflTLrrC/lgrIfaSe+Wu0b89GKccT7vxXA0MoAIO+Q==}
+    dev: false
+
   /@humanwhocodes/config-array@0.11.13:
     resolution: {integrity: sha512-JSBDMiDKSzQVngfRjOdFXgFfklaXI4K9nLF49Auh21lmBWRLIK3+xTErTWD4KU54pb6coM6ESE7Awz/FNU3zgQ==}
     engines: {node: '>=10.10.0'}
@@ -911,6 +928,12 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.2:
     resolution: {integrity: sha512-6EwiSjwWYP7pTckG6I5eyFANjPhmPjUX9JRLUSfNPC7FX7zK9gyZAfUEaECL6ALTpGX5AjnBq3C9XmVWPitNpw==}
+    dev: false
+
+  /@internationalized/date@3.5.2:
+    resolution: {integrity: sha512-vo1yOMUt2hzp63IutEaTUxROdvQg1qlMRsbCvbay2AK2Gai7wIgCyK5weEX3nHkiLgo4qCXHijFNC/ILhlRpOQ==}
+    dependencies:
+      '@swc/helpers': 0.5.8
     dev: false
 
   /@jest/schemas@29.6.3:
@@ -1016,6 +1039,11 @@ packages:
       '@lezer/lr': 1.3.14
     dev: false
 
+  /@lukeed/csprng@1.1.0:
+    resolution: {integrity: sha512-Z7C/xXCiGWsg0KuKsHTKJxbWhpI3Vs5GwLfOean7MGyVFGqdRgBbAjOCh6u4bbjPc/8MJ2pZmK/0DLdCbivLDA==}
+    engines: {node: '>=8'}
+    dev: false
+
   /@manypkg/find-root@1.1.0:
     resolution: {integrity: sha512-mki5uBvhHzO8kYYix/WRy2WX8S3B5wdVSc9D6KcU5lQNglP2yt58/VfLuAK49glRXChosY8ap2oJ1qgma3GUVA==}
     dependencies:
@@ -1038,6 +1066,20 @@ packages:
 
   /@mdi/js@7.4.47:
     resolution: {integrity: sha512-KPnNOtm5i2pMabqZxpUz7iQf+mfrYZyKCZ8QNz85czgEt7cuHcGorWfdzUMWYA0SD+a6Hn4FmJ+YhzzzjkTZrQ==}
+    dev: false
+
+  /@melt-ui/svelte@0.76.3(svelte@4.2.8):
+    resolution: {integrity: sha512-fEtwHnOVLH0eNwtr+7pX5JQVtOL2XWVFA0/xrNU0yL6NkEpv++4NUwaaulGZC4nVmVG/gIA1JK2fx5M0u01TlA==}
+    peerDependencies:
+      svelte: '>=3 <5'
+    dependencies:
+      '@floating-ui/core': 1.6.0
+      '@floating-ui/dom': 1.6.3
+      '@internationalized/date': 3.5.2
+      dequal: 2.0.3
+      focus-trap: 7.5.4
+      nanoid: 5.0.7
+      svelte: 4.2.8
     dev: false
 
   /@nodelib/fs.scandir@2.1.5:
@@ -1192,8 +1234,8 @@ packages:
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
     dev: true
 
-  /@svelte-thing/components@0.0.14(@fig/lezer-bash@1.2.5)(@lezer/common@1.2.0)(@lezer/cpp@1.1.2)(@lezer/css@1.1.5)(@lezer/highlight@1.2.0)(@lezer/html@1.3.8)(@lezer/javascript@1.4.11)(@lezer/json@1.0.2)(@lezer/lr@1.3.14)(@lezer/python@1.1.10)(@lezer/rust@1.0.2)(@replit/codemirror-lang-svelte@6.0.0)(@sveltejs/kit@2.0.2)(svelte@4.2.8):
-    resolution: {integrity: sha512-+P0VbKlsLBVlKgi48Qahm7XyhQ/KcuZ+/Ai0cabJS9EByoARPUjtasownDzyt9t7LJCnzbIlaG3hFg1j0lBQmA==}
+  /@svelte-thing/components@0.0.19(@fig/lezer-bash@1.2.5)(@lezer/common@1.2.0)(@lezer/cpp@1.1.2)(@lezer/css@1.1.5)(@lezer/highlight@1.2.0)(@lezer/html@1.3.8)(@lezer/javascript@1.4.11)(@lezer/json@1.0.2)(@lezer/lr@1.3.14)(@lezer/python@1.1.10)(@lezer/rust@1.0.2)(@replit/codemirror-lang-svelte@6.0.0)(@sveltejs/kit@2.0.2)(svelte@4.2.8):
+    resolution: {integrity: sha512-nINSorUi1NT0IvUDTg2vcFojwMs6Iwq/qGggOMMy0Q+kLy6+VxQd+yURBsxEpBHOBIgEuP+XHiJqpAaxb+XXeQ==}
     peerDependencies:
       '@fig/lezer-bash': ^1.2.5
       '@lezer/common': ^1.1.0
@@ -1222,10 +1264,12 @@ packages:
       '@lezer/python': 1.1.10
       '@lezer/rust': 1.0.2
       '@mdi/js': 7.4.47
+      '@melt-ui/svelte': 0.76.3(svelte@4.2.8)
       '@replit/codemirror-lang-svelte': 6.0.0(@codemirror/autocomplete@6.11.1)(@codemirror/lang-css@6.2.1)(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.0)(@lezer/highlight@1.2.0)(@lezer/javascript@1.4.11)(@lezer/lr@1.3.14)
       '@sveltejs/kit': 2.0.2(@sveltejs/vite-plugin-svelte@3.0.1)(svelte@4.2.8)(vite@5.0.10)
       esm-env: 1.0.0
       svelte: 4.2.8
+      uid: 2.0.2
     dev: false
 
   /@sveltejs/adapter-auto@3.0.0(@sveltejs/kit@2.0.2):
@@ -1295,6 +1339,12 @@ packages:
       vitefu: 0.2.5(vite@5.0.10)
     transitivePeerDependencies:
       - supports-color
+
+  /@swc/helpers@0.5.8:
+    resolution: {integrity: sha512-lruDGw3pnfM3wmZHeW7JuhkGQaJjPyiKjxeGhdmfoOT53Ic9qb5JLDNaK2HUdl1zLDeX28H221UvKjfdvSLVMg==}
+    dependencies:
+      tslib: 2.6.2
+    dev: false
 
   /@types/cookie@0.6.0:
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
@@ -1861,8 +1911,8 @@ packages:
   /concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  /content-thing@0.0.15(@sveltejs/kit@2.0.2):
-    resolution: {integrity: sha512-ZiBZ8Sa0bAPTs/0bRk0GajuQDhEb/3UKo1QBRPeW0Dqg7BRW2/fNX/Y96GzSnkZTz+Gtvxtev1HVWwZLJFw7IQ==}
+  /content-thing@0.0.16(@sveltejs/kit@2.0.2):
+    resolution: {integrity: sha512-6gEe/G3Dqon1A4Ds8e0AtA7wpQuZ5SGimJIOLj7PzxzYHbzPc9omnSgYdBVPFy52OJXu+9737gegy9ztRdBK8g==}
     peerDependencies:
       '@sveltejs/kit': ^2.0.0
     dependencies:
@@ -2631,6 +2681,12 @@ packages:
 
   /flatted@3.2.9:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
+
+  /focus-trap@7.5.4:
+    resolution: {integrity: sha512-N7kHdlgsO/v+iD/dMoJKtsSqs5Dz/dXZVebRgJw23LDk+jMi/974zyiOYDziY2JPp8xivq9BmUGwIJMiuSBi7w==}
+    dependencies:
+      tabbable: 6.2.0
+    dev: false
 
   /for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
@@ -3656,6 +3712,12 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  /nanoid@5.0.7:
+    resolution: {integrity: sha512-oLxFY2gd2IqnjcYyOXD8XGCftpGtZP2AbHbOkthDkvRywH5ayNtPVy9YlOPcHckXzbLTCHpkb7FB+yuxKV13pQ==}
+    engines: {node: ^18 || >=20}
+    hasBin: true
+    dev: false
+
   /natural-compare@1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
 
@@ -4651,6 +4713,10 @@ packages:
       magic-string: 0.30.5
       periscopic: 3.1.0
 
+  /tabbable@6.2.0:
+    resolution: {integrity: sha512-Cat63mxsVJlzYvN51JmVXIgNoUokrIaT2zLclCXjRd8boZ0004U4KCs/sToJ75C6sdlByWxpYnb5Boif1VSFew==}
+    dev: false
+
   /tar@6.2.0:
     resolution: {integrity: sha512-/Wo7DcT0u5HUV486xg675HtjNd3BXZ6xDbzsCUZPt5iw8bTQ63bP0Raut3mvro9u+CUyq7YQd8Cx55fsZXxqLQ==}
     engines: {node: '>=10'}
@@ -4728,7 +4794,6 @@ packages:
 
   /tslib@2.6.2:
     resolution: {integrity: sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==}
-    dev: true
 
   /tsx@4.7.0:
     resolution: {integrity: sha512-I+t79RYPlEYlHn9a+KzwrvEwhJg35h/1zHsLC2JXvhC2mdynMv6Zxzvhv5EMV6VF5qJlLlkSnMVvdZV3PSIGcg==}
@@ -4849,6 +4914,13 @@ packages:
   /ufo@1.5.3:
     resolution: {integrity: sha512-Y7HYmWaFwPUmkoQCUIAYpKqkOf+SbVj/2fJJZ4RJMCfZp0rTGwRbzQD+HghfnhKOjL9E01okqz+ncJskGYfBNw==}
     dev: true
+
+  /uid@2.0.2:
+    resolution: {integrity: sha512-u3xV3X7uzvi5b1MncmZo3i2Aw222Zk1keqLA1YkHldREkAhAqi65wuPfe7lHx8H/Wzy+8CE7S7uS3jekIM5s8g==}
+    engines: {node: '>=8'}
+    dependencies:
+      '@lukeed/csprng': 1.1.0
+    dev: false
 
   /unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
