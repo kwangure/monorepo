@@ -5,7 +5,7 @@ const config = {
 	singleQuote: true,
 	trailingComma: 'all',
 	tabWidth: 4, // For YAML which strictly uses spaces instead of tabs
-	plugins: ['prettier-plugin-svelte', 'prettier-plugin-tailwindcss'],
+	plugins: ['prettier-plugin-svelte'],
 	overrides: [
 		{
 			files: '*.svelte',
