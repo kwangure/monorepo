@@ -12,12 +12,8 @@ export default [
 		ignores: [
 			'**/.svelte-kit/',
 			'**/.wireit/',
-			'**/dist/',
-			'**/packages/*/.types/',
-			'**/packages/*/public/',
-			'**/root/',
-			'**/build/',
-			'**/tmp/',
+			'**/dist/', // package output
+			'**/build/', // site output
 		],
 	},
 	js.configs.recommended,
@@ -31,13 +27,9 @@ export default [
 			},
 		},
 		rules: {
-			'no-unused-vars': [
-				'error',
-				{
-					argsIgnorePattern: '^_',
-					args: 'all',
-				},
-			],
+			// Disable in favour of @typescript-eslint/no-unused-vars which
+			// understands that function arguments in types are always unused
+			'no-unused-vars': 'off',
 			'@typescript-eslint/no-unused-vars': [
 				'error',
 				{
