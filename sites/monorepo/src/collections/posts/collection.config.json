@@ -1,0 +1,11 @@
+{
+	"$schema": "../../../node_modules/content-thing/config/schema.json",
+	"type": "markdown",
+	"data": {
+		"fields": {
+			"title": {
+				"type": "text"
+			}
+		}
+	}
+}
