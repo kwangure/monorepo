@@ -43,6 +43,13 @@
 				"test"
 			]
 		},
+		"release": {
+			"dependencies": [
+				"build",
+				"publint",
+				"test"
+			]
+		},
 		"test": {
 			"command": "vitest run",
 			"files": [

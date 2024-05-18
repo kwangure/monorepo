@@ -51,6 +51,27 @@
 				"./packages/monorepo:pre-commit",
 				"./sites/monorepo:pre-commit"
 			]
+		},
+		"release": {
+			"command": "changeset publish",
+			"dependencies": [
+				"./packages/monorepo:release"
+			]
+		},
+		"test": {
+			"dependencies": [
+				"./packages/monorepo:test",
+				"./sites/monorepo:test"
+			]
+		},
+		"version": {
+			"command": "changeset version",
+			"files": [
+				"./.changeset/*.md",
+				"./packages/**/package.json",
+				"./packages/**/CHANGELOG.md"
+			],
+			"output": []
 		}
 	},
 	"devDependencies": {
