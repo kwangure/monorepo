@@ -66,6 +66,7 @@ export default [
 		plugins: {
 			svelte: sveltePlugin,
 		},
+		processor: 'svelte/svelte',
 		rules: {
 			...js.configs.recommended.rules,
 			.../** @type {import('eslint').Linter.RulesRecord} */ (
