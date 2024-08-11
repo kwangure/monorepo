@@ -5,7 +5,6 @@
 		"composite": true,
 		"declaration": true,
 		"declarationMap": true,
-		"exactOptionalPropertyTypes": true,
 		"forceConsistentCasingInFileNames": true,
 		"importHelpers": true,
 		"isolatedModules": true,
