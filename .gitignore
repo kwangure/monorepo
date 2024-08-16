@@ -15,4 +15,5 @@ packages/*/dist
 packages/*/types
 
 sites/*/.svelte-kit
+sites/*/.collections
 sites/*/build
