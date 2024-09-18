@@ -4,7 +4,4 @@ import { content } from 'content-thing';
 
 export default defineConfig({
 	plugins: [content(), sveltekit()],
-	ssr: {
-		external: ['content-thing'],
-	},
 });
