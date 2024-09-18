@@ -2,7 +2,6 @@
 	"name": "monorepo",
 	"scripts": {
 		"build": "wireit",
-		"dev": "wireit",
 		"pre-commit": "wireit",
 		"publint": "wireit",
 		"test": "wireit"
@@ -18,11 +17,6 @@
 			"output": [
 				"types"
 			]
-		},
-		"dev": {
-			"command": "tsc --build --watch",
-			"service": true,
-			"files": []
 		},
 		"publint": {
 			"command": "publint",
