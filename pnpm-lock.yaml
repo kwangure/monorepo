@@ -82,8 +82,8 @@ importers:
         specifier: ^4.0.0-next.3
         version: 4.0.0-next.3(svelte@5.0.0-next.222)(vite@5.4.1(@types/node@20.10.5))
       content-thing:
-        specifier: ^0.0.31
-        version: 0.0.31
+        specifier: ^0.0.32
+        version: 0.0.32
       svelte:
         specifier: ^5.0.0-next.222
         version: 5.0.0-next.222
@@ -1202,8 +1202,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  content-thing@0.0.31:
-    resolution: {integrity: sha512-3rArf4J2gsyv1FamMyFq6ZQfgasCYWDgSbGEcKXDLJHA4k55ySML4Iz4NBQfUTfKpLDO95OQ5G9UTYV8Z4W6uA==}
+  content-thing@0.0.32:
+    resolution: {integrity: sha512-kdD2MER80hCSGEynRdJFg4NLeUNPMuihTQ6NirXZ4V9a1U6vY99QtZ2+f89theBoDcZpIPlrg+rkeYRtSFPyXg==}
 
   cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
@@ -4191,7 +4191,7 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  content-thing@0.0.31:
+  content-thing@0.0.32:
     dependencies:
       '@content-thing/internal-utils': 0.0.3
       '@content-thing/remark-attributes': 0.0.3
