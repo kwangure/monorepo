@@ -50,14 +50,13 @@
 			"output": []
 		},
 		"pre-commit": {
-			"command": "pnpm install",
 			"dependencies": [
 				"./packages/monorepo:pre-commit",
 				"./sites/monorepo:pre-commit"
 			]
 		},
 		"release": {
-			"command": "changeset publish",
+			"command": "changeset publish && pnpm install",
 			"dependencies": [
 				"./packages/monorepo:release"
 			]
