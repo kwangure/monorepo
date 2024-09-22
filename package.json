@@ -50,6 +50,7 @@
 			"output": []
 		},
 		"pre-commit": {
+			"command": "pnpm install",
 			"dependencies": [
 				"./packages/monorepo:pre-commit",
 				"./sites/monorepo:pre-commit"
