@@ -73,7 +73,6 @@
 	},
 	"dependencies": {
 		"@content-thing/memdb": "^0.0.6",
-		"@content-thing/svelte-components": "^0.0.1",
 		"@svelte-thing/components": "^0.0.29"
 	},
 	"devDependencies": {
