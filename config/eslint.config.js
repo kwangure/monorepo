@@ -18,6 +18,7 @@ export default [
 	},
 	js.configs.recommended,
 	...tseslint.configs.recommended,
+	...tseslint.configs.stylistic,
 	{
 		languageOptions: {
 			globals: {
@@ -69,9 +70,7 @@ export default [
 		processor: 'svelte/svelte',
 		rules: {
 			...js.configs.recommended.rules,
-			.../** @type {import('eslint').Linter.RulesRecord} */ (
-				sveltePlugin.configs.recommended.rules
-			),
+			...sveltePlugin.configs.recommended.rules,
 			'no-inner-declarations': 'off',
 		},
 	},
