@@ -38,6 +38,8 @@ export default [
 					args: 'all',
 				},
 			],
+			// Tries to correct `type`s to interfaces, but `type` fail index signature check
+			'@typescript-eslint/consistent-type-definitions': 'off',
 			'require-await': 'error',
 			...prettier.rules,
 		},
