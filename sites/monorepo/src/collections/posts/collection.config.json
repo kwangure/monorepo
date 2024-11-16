@@ -1,10 +1,8 @@
 {
 	"type": "markdown",
-	"data": {
-		"fields": {
-			"title": {
-				"type": "string"
-			}
+	"fields": {
+		"title": {
+			"type": "string"
 		}
 	}
 }
