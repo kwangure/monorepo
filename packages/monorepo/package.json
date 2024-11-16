@@ -9,7 +9,7 @@
 	},
 	"wireit": {
 		"build": {
-			"command": "tsc --build",
+			"command": "tsc",
 			"files": [
 				"src/**/*.{js,ts}",
 				"tsconfig.json",
