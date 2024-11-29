@@ -63,8 +63,8 @@ importers:
         specifier: ^0.0.10
         version: 0.0.10
       '@svelte-thing/components':
-        specifier: ^0.0.36
-        version: 0.0.36(svelte@5.0.4)
+        specifier: ^0.0.40
+        version: 0.0.40(svelte@5.0.4)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.0.0
@@ -76,8 +76,8 @@ importers:
         specifier: ^4.0.0-next.3
         version: 4.0.0-next.3(svelte@5.0.4)(vite@5.4.8(@types/node@20.10.5))
       content-thing:
-        specifier: ^0.0.39
-        version: 0.0.39(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
+        specifier: ^0.0.40
+        version: 0.0.40(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
       svelte:
         specifier: ^5.0.4
         version: 5.0.4
@@ -213,11 +213,11 @@ packages:
   '@content-thing/remark-attributes@0.0.3':
     resolution: {integrity: sha512-AN3xSBYpuyTkN5YLX2HDzrfeg0ncfp4S+Ld2vJWSGgIMiqnw2KPbejeAZbcyvjfpcfd/H2wnvOZoWa74NeBJQA==}
 
-  '@content-thing/syntax-highlighter@0.0.1':
-    resolution: {integrity: sha512-Gy0oIVpZkCy8R+1Cch6mtLEkq5/cPuFNSBRsCHjHL0Xq4Rgi+vulSlHOC/k1R88Ll4Kd5rn+UsD5CeM8eF2LXw==}
+  '@content-thing/syntax-highlighter@0.0.2':
+    resolution: {integrity: sha512-9z5Uoh23Oes667tuyccxFQ8RNBEEx6lMlkcObkS2TGK2MTdfhXedm88aoBHWm7VFezVCbXQh9j4VOsSZdcg+2w==}
 
-  '@content-thing/vite-plugin-syntax-highlighter@0.0.1':
-    resolution: {integrity: sha512-aHxWtN9u+ASBTLI0SVjxgZxk3UBgwygoatS1GJXQGw2kOUATIBFh9NNcwp3ucl+2jKwXKjawPu1E2TKzDev6Ug==}
+  '@content-thing/vite-plugin-syntax-highlighter@0.0.2':
+    resolution: {integrity: sha512-og7J3ZNed8Orb8zWSb0RB4zhIpm3Rtp+zbACtun5sW2wZf4RtvSYZAO3COtdufwQi34suUwj2drDhIVkXtvegA==}
 
   '@esbuild/aix-ppc64@0.21.5':
     resolution: {integrity: sha512-1SDgH6ZSPTlggy1yI6+Dbkiz8xzpHJEVAlF/AM1tHPLsf5STom9rwtjE4hKAF20FfXXNTFqEYXyJNWh1GiZedQ==}
@@ -394,6 +394,9 @@ packages:
   '@eslint/plugin-kit@0.2.0':
     resolution: {integrity: sha512-vH9PiIMMwvhCx31Af3HiGzsVNULDbyVkHXwlemn/B0TFj/00ho3y55efXrUZTfQipxoHC5u4xq6zblww1zm1Ig==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fig/lezer-bash@1.2.5':
+    resolution: {integrity: sha512-Qvyz/wFybXJzx9VQ1H0MW0HM1o93i5fLbeiQRehMnd+YThdfh7z0m1C2EqWb0GF4cpOJEsFZd2x+NAdQf6uqog==}
 
   '@humanwhocodes/module-importer@1.0.1':
     resolution: {integrity: sha512-bxveV4V8v5Yb4ncFTT3rPSgZBOpCkjfK0y4oVVVJwIuDVBRMDXrPyXRL988i5ap9m9bnyEEjWfm5WkBmtffLfA==}
@@ -577,13 +580,15 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@svelte-thing/component-utils@0.0.6':
-    resolution: {integrity: sha512-UDuYpVd1IysT6Kp+oE60L0dl4lydShluja6teHw+PJpgMQLNsnRpA5Ui7t7BLb710MnKb8Qj87EZj6s+gfi6gg==}
-
-  '@svelte-thing/components@0.0.36':
-    resolution: {integrity: sha512-/s2EOVBRZY+43SqhmmV4wFn5GCXMIkEdno7zKt8yP1Y9y+7cFhVHcL2ZL84HVsLWJrBHfbEsoJgbcg5uOa2jew==}
+  '@svelte-thing/component-utils@0.0.8':
+    resolution: {integrity: sha512-c3Lq3l0omW+FOfawpLnqt53YlgTAY8t4+HF8onpb+Jq5QG1KB4wRzLKZ+CH2a0jLE3lI1vu9OmtmeU2RQEbg4g==}
     peerDependencies:
-      svelte: ^5.0.0-next.265
+      svelte: ^5.0.0
+
+  '@svelte-thing/components@0.0.40':
+    resolution: {integrity: sha512-5ppXmIfKj0kzru/Ozqt3BsaF/O2hszMNizCpIivMsMhjWL2MngbrIAq+w4AmLwRDOR8I/bXAYaaUuvVCbOqQ8w==}
+    peerDependencies:
+      svelte: ^5.0.0
 
   '@sveltejs/adapter-auto@3.0.0':
     resolution: {integrity: sha512-UNWSs/rOReBRfI/xFwSO2WYF1a7PT74SrWOHJmSNLY3Lq+zbH0uuvnlP+TmrTUBvOTkou3WJDjL6lK3n6aOUgQ==}
@@ -956,8 +961,8 @@ packages:
   concat-map@0.0.1:
     resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
 
-  content-thing@0.0.39:
-    resolution: {integrity: sha512-lV5jwRZavznxNtP9U2bFByu7P3Hjh19twiHagUS3u8d2q1AYLCzEfavgYSlo400NaQUTacZFrEb4VyUaPw51Lg==}
+  content-thing@0.0.40:
+    resolution: {integrity: sha512-nU5OQ4QxTSyozCZ95gaM1CRbEc8ZFvENcBIZN4/StLH33Wv/bY358zleQYTOkHcs0ADT2bzGtMiQWx1Z4OpFRw==}
 
   cookie@0.6.0:
     resolution: {integrity: sha512-U71cyTamuh1CRNCfpGY6to28lxvNwPG4Guz/EVjgf3Jmzv0vlDp1atT9eS5dDjMYHucpHbWns6Lwf3BKz6svdw==}
@@ -2811,8 +2816,9 @@ snapshots:
       md-attr-parser: 1.3.0
       unist-util-visit: 5.0.0
 
-  '@content-thing/syntax-highlighter@0.0.1(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)':
+  '@content-thing/syntax-highlighter@0.0.2(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)':
     dependencies:
+      '@fig/lezer-bash': 1.2.5
       '@lezer/common': 1.2.1
       '@lezer/cpp': 1.1.2
       '@lezer/css': 1.1.9
@@ -2833,10 +2839,10 @@ snapshots:
       - '@codemirror/state'
       - '@codemirror/view'
 
-  '@content-thing/vite-plugin-syntax-highlighter@0.0.1(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)':
+  '@content-thing/vite-plugin-syntax-highlighter@0.0.2(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)':
     dependencies:
       '@content-thing/line-range': 0.0.0
-      '@content-thing/syntax-highlighter': 0.0.1(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
+      '@content-thing/syntax-highlighter': 0.0.2(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
     transitivePeerDependencies:
       - '@codemirror/autocomplete'
       - '@codemirror/lang-css'
@@ -2955,6 +2961,11 @@ snapshots:
   '@eslint/plugin-kit@0.2.0':
     dependencies:
       levn: 0.4.1
+
+  '@fig/lezer-bash@1.2.5':
+    dependencies:
+      '@lezer/highlight': 1.2.1
+      '@lezer/lr': 1.4.2
 
   '@humanwhocodes/module-importer@1.0.1': {}
 
@@ -3127,14 +3138,15 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.20.0':
     optional: true
 
-  '@svelte-thing/component-utils@0.0.6':
+  '@svelte-thing/component-utils@0.0.8(svelte@5.0.4)':
     dependencies:
       esm-env: 1.0.0
+      svelte: 5.0.4
 
-  '@svelte-thing/components@0.0.36(svelte@5.0.4)':
+  '@svelte-thing/components@0.0.40(svelte@5.0.4)':
     dependencies:
       '@mdi/js': 7.4.47
-      '@svelte-thing/component-utils': 0.0.6
+      '@svelte-thing/component-utils': 0.0.8(svelte@5.0.4)
       esm-env: 1.0.0
       svelte: 5.0.4
       uid: 2.0.2
@@ -3567,13 +3579,13 @@ snapshots:
 
   concat-map@0.0.1: {}
 
-  content-thing@0.0.39(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0):
+  content-thing@0.0.40(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0):
     dependencies:
       '@content-thing/internal-utils': 0.0.3
       '@content-thing/line-range': 0.0.0
       '@content-thing/remark-attributes': 0.0.3
-      '@content-thing/syntax-highlighter': 0.0.1(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
-      '@content-thing/vite-plugin-syntax-highlighter': 0.0.1(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
+      '@content-thing/syntax-highlighter': 0.0.2(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
+      '@content-thing/vite-plugin-syntax-highlighter': 0.0.2(@codemirror/autocomplete@6.11.1(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)(@lezer/common@1.2.1))(@codemirror/lang-css@6.2.1(@codemirror/view@6.23.0))(@codemirror/lang-html@6.4.7)(@codemirror/lang-javascript@6.2.1)(@codemirror/language@6.10.0)(@codemirror/state@6.4.0)(@codemirror/view@6.23.0)
       '@types/mdast': 4.0.3
       mdast-util-to-markdown: 2.1.0
       remark-parse: 11.0.0
