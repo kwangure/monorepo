@@ -73,7 +73,7 @@
 	},
 	"dependencies": {
 		"@content-thing/memdb": "^0.0.10",
-		"@svelte-thing/components": "^0.0.40"
+		"@svelte-thing/components": "^0.0.43"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-auto": "^3.0.0",
