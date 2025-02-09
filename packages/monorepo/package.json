@@ -67,10 +67,10 @@
 		"!**/*.test.d.ts"
 	],
 	"devDependencies": {
-		"@types/node": "^20.10.5",
-		"publint": "^0.3.2",
-		"typescript": "^5.7.0",
-		"vitest": "^3.0.4"
+		"@types/node": "catalog:",
+		"publint": "catalog:",
+		"typescript": "catalog:",
+		"vitest": "catalog:"
 	},
 	"type": "module"
 }
