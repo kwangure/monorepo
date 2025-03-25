@@ -6,7 +6,7 @@ catalog:
     '@changesets/cli': ^2.27.1
     '@content-thing/memdb': ^0.0.10
     '@svelte-thing/components': ^0.0.44
-    '@svelte-thing/css': ^0.0.2
+    '@svelte-thing/css': ^0.0.3
     '@svelte-thing/rune-components': ^0.0.14
     '@sveltejs/adapter-auto': ^4.0.0
     '@sveltejs/kit': ^2.16.0

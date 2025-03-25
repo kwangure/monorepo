@@ -16,8 +16,8 @@ catalogs:
       specifier: ^0.0.44
       version: 0.0.44
     '@svelte-thing/css':
-      specifier: ^0.0.2
-      version: 0.0.2
+      specifier: ^0.0.3
+      version: 0.0.3
     '@svelte-thing/rune-components':
       specifier: ^0.0.14
       version: 0.0.14
@@ -142,7 +142,7 @@ importers:
         version: 0.0.44(svelte@5.19.3)
       '@svelte-thing/css':
         specifier: 'catalog:'
-        version: 0.0.2
+        version: 0.0.3
       '@svelte-thing/rune-components':
         specifier: 'catalog:'
         version: 0.0.14(svelte@5.19.3)
@@ -707,8 +707,8 @@ packages:
     peerDependencies:
       svelte: ^5.0.0
 
-  '@svelte-thing/css@0.0.2':
-    resolution: {integrity: sha512-tytycVPpE/yL9g53qfpSS51grhbYjuuQVziOQ1K2OP5m0WYhkjxTO7XGQi19KUUYQHXeXlylfJr78shbOAPUWQ==}
+  '@svelte-thing/css@0.0.3':
+    resolution: {integrity: sha512-j2p68PFCjqx+eNOVcark6H4PJQ+EiJ3815/1Lbh5v54Jz+LH+nLYbqS1188Y+iTOpCmdS9aRpKdgEonxSkMK1w==}
 
   '@svelte-thing/dom-event@0.0.5':
     resolution: {integrity: sha512-e2dBoa6U8NJxUxnlmqvjJEH431BH32Obtjlxw/HPf1JwDRCr1YqmMEezJ4xvePelyIzViqvyQ7Xu68m+pzx/cg==}
@@ -3155,7 +3155,7 @@ snapshots:
       svelte: 5.19.3
       uid: 2.0.2
 
-  '@svelte-thing/css@0.0.2': {}
+  '@svelte-thing/css@0.0.3': {}
 
   '@svelte-thing/dom-event@0.0.5': {}
 
