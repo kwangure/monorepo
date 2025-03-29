@@ -13,14 +13,14 @@ catalogs:
       specifier: ^0.0.10
       version: 0.0.10
     '@svelte-thing/components':
-      specifier: ^0.0.44
-      version: 0.0.44
+      specifier: ^0.0.46
+      version: 0.0.46
     '@svelte-thing/css':
-      specifier: ^0.0.3
-      version: 0.0.3
+      specifier: ^0.0.4
+      version: 0.0.4
     '@svelte-thing/rune-components':
-      specifier: ^0.0.14
-      version: 0.0.14
+      specifier: ^0.0.19
+      version: 0.0.19
     '@sveltejs/adapter-auto':
       specifier: ^4.0.0
       version: 4.0.0
@@ -139,13 +139,13 @@ importers:
         version: 0.0.10
       '@svelte-thing/components':
         specifier: 'catalog:'
-        version: 0.0.44(svelte@5.19.3)
+        version: 0.0.46(svelte@5.19.3)
       '@svelte-thing/css':
         specifier: 'catalog:'
-        version: 0.0.3
+        version: 0.0.4
       '@svelte-thing/rune-components':
         specifier: 'catalog:'
-        version: 0.0.14(svelte@5.19.3)
+        version: 0.0.19(svelte@5.19.3)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: 'catalog:'
@@ -697,26 +697,26 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@svelte-thing/component-utils@0.0.9':
-    resolution: {integrity: sha512-igZ9aNHeP0V16bKMC52WSgD4ftJ9qdKlreLLYXEctEtrBDQ42yrABp+RMOLB1aIlEAnu/fN7Z0A+Z9MhA8TWCg==}
+  '@svelte-thing/component-utils@0.0.10':
+    resolution: {integrity: sha512-gtVybuta5ds3ZN9Qz+M9fMp88cBPGndZqqKley3IOQPb4wz/VlNJuIsvintWGyNmwL2R6PNQvSzmg0VYIeHNkg==}
     peerDependencies:
-      svelte: ^5.0.0
+      svelte: ^5.19.0
 
-  '@svelte-thing/components@0.0.44':
-    resolution: {integrity: sha512-v6k+Xlh4d2CEEdGXCzcG8P0hy5FB/cmBjDjHpHJ9FVOHISJ+YkwL3afDid8ZdOjhc2Cf4koYrriSMbWlw8ke9Q==}
+  '@svelte-thing/components@0.0.46':
+    resolution: {integrity: sha512-KMnNzPC8NeeAFcob4rqJk3ivm2jfE2e1AtNr0co86x80r+45LTCcPZgZo5kQWiP+nRVtW5199+48o3qwYT3dsw==}
     peerDependencies:
-      svelte: ^5.0.0
+      svelte: ^5.19.0
 
-  '@svelte-thing/css@0.0.3':
-    resolution: {integrity: sha512-j2p68PFCjqx+eNOVcark6H4PJQ+EiJ3815/1Lbh5v54Jz+LH+nLYbqS1188Y+iTOpCmdS9aRpKdgEonxSkMK1w==}
+  '@svelte-thing/css@0.0.4':
+    resolution: {integrity: sha512-hPFlFNhbmFLAKJqLaHaQyFN73IvNU127irRsJAssZa0WY1ncoetaEzkJhKMg8aAYaHKa5RpO58siS3cm81Vilw==}
 
   '@svelte-thing/dom-event@0.0.5':
     resolution: {integrity: sha512-e2dBoa6U8NJxUxnlmqvjJEH431BH32Obtjlxw/HPf1JwDRCr1YqmMEezJ4xvePelyIzViqvyQ7Xu68m+pzx/cg==}
 
-  '@svelte-thing/rune-components@0.0.14':
-    resolution: {integrity: sha512-shNcdMYHAWThmi2l6snpgQ6Eho1CroFHSthLyAMy6Y6dsxPl2sfLd4GWqwCrAsByfY9wD8A70PskBLrqj8nACg==}
+  '@svelte-thing/rune-components@0.0.19':
+    resolution: {integrity: sha512-PdBYbRAeN0kl6wNZrxoX0/XS946z/9ZumASwUpLW5705NNtVDaC43IDtHabVomYBZA1oup2xe0wtOBmYpNMnkQ==}
     peerDependencies:
-      svelte: ^5.0.0
+      svelte: ^5.19.0
 
   '@sveltejs/adapter-auto@4.0.0':
     resolution: {integrity: sha512-kmuYSQdD2AwThymQF0haQhM8rE5rhutQXG4LNbnbShwhMO4qQGnKaaTy+88DuNSuoQDi58+thpq8XpHc1+oEKQ==}
@@ -3142,27 +3142,28 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.28.1':
     optional: true
 
-  '@svelte-thing/component-utils@0.0.9(svelte@5.19.3)':
+  '@svelte-thing/component-utils@0.0.10(svelte@5.19.3)':
     dependencies:
       esm-env: 1.2.2
       svelte: 5.19.3
 
-  '@svelte-thing/components@0.0.44(svelte@5.19.3)':
+  '@svelte-thing/components@0.0.46(svelte@5.19.3)':
     dependencies:
       '@mdi/js': 7.4.47
-      '@svelte-thing/component-utils': 0.0.9(svelte@5.19.3)
+      '@svelte-thing/component-utils': 0.0.10(svelte@5.19.3)
       esm-env: 1.2.2
       svelte: 5.19.3
       uid: 2.0.2
 
-  '@svelte-thing/css@0.0.3': {}
+  '@svelte-thing/css@0.0.4': {}
 
   '@svelte-thing/dom-event@0.0.5': {}
 
-  '@svelte-thing/rune-components@0.0.14(svelte@5.19.3)':
+  '@svelte-thing/rune-components@0.0.19(svelte@5.19.3)':
     dependencies:
-      '@svelte-thing/component-utils': 0.0.9(svelte@5.19.3)
+      '@svelte-thing/component-utils': 0.0.10(svelte@5.19.3)
       '@svelte-thing/dom-event': 0.0.5
+      esm-env: 1.2.2
       svelte: 5.19.3
       uid: 2.0.2
 
