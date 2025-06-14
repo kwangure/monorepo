@@ -2,11 +2,13 @@
 	"name": "config",
 	"private": true,
 	"dependencies": {
+		"@eslint/js": "catalog:",
 		"eslint-config-prettier": "catalog:",
 		"eslint-plugin-svelte": "catalog:",
 		"globals": "catalog:",
 		"prettier-plugin-svelte": "catalog:",
 		"svelte": "catalog:",
+		"svelte-eslint-parser": "catalog:",
 		"typescript-eslint": "catalog:"
 	},
 	"type": "module"

@@ -79,8 +79,11 @@
 	},
 	"devDependencies": {
 		"@changesets/cli": "catalog:",
+		"@eslint/js": "catalog:",
 		"eslint": "catalog:",
 		"prettier": "catalog:",
+		"prettier-plugin-svelte": "catalog:",
+		"svelte-eslint-parser": "catalog:",
 		"wireit": "catalog:"
 	},
 	"type": "module"

@@ -77,6 +77,9 @@ export default [
 			...js.configs.recommended.rules,
 			...sveltePlugin.configs.recommended.rules,
 			'no-inner-declarations': 'off',
+			// Disable in favour of @typescript-eslint/no-unused-vars which
+			// understands that function arguments in types are always unused
+			'no-unused-vars': 'off',
 		},
 	},
 ];

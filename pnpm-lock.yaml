@@ -12,6 +12,9 @@ catalogs:
     '@content-thing/memdb':
       specifier: ^0.0.10
       version: 0.0.10
+    '@eslint/js':
+      specifier: ^9.29.0
+      version: 9.29.0
     '@svelte-thing/components':
       specifier: ^0.0.46
       version: 0.0.46
@@ -63,6 +66,9 @@ catalogs:
     svelte-check:
       specifier: ^4.1.0
       version: 4.1.1
+    svelte-eslint-parser:
+      specifier: ^1.2.0
+      version: 1.2.0
     typescript:
       specifier: ^5.7.0
       version: 5.7.3
@@ -86,18 +92,30 @@ importers:
       '@changesets/cli':
         specifier: 'catalog:'
         version: 2.27.1
+      '@eslint/js':
+        specifier: 'catalog:'
+        version: 9.29.0
       eslint:
         specifier: 'catalog:'
         version: 9.19.0
       prettier:
         specifier: 'catalog:'
         version: 3.4.2
+      prettier-plugin-svelte:
+        specifier: 'catalog:'
+        version: 3.3.3(prettier@3.4.2)(svelte@5.19.3)
+      svelte-eslint-parser:
+        specifier: 'catalog:'
+        version: 1.2.0(svelte@5.19.3)
       wireit:
         specifier: 'catalog:'
         version: 0.14.10
 
   config:
     dependencies:
+      '@eslint/js':
+        specifier: 'catalog:'
+        version: 9.29.0
       eslint-config-prettier:
         specifier: 'catalog:'
         version: 10.0.1(eslint@9.19.0)
@@ -113,6 +131,9 @@ importers:
       svelte:
         specifier: 'catalog:'
         version: 5.19.3
+      svelte-eslint-parser:
+        specifier: 'catalog:'
+        version: 1.2.0(svelte@5.19.3)
       typescript-eslint:
         specifier: 'catalog:'
         version: 8.22.0(eslint@9.19.0)(typescript@5.7.3)
@@ -474,6 +495,10 @@ packages:
 
   '@eslint/js@9.19.0':
     resolution: {integrity: sha512-rbq9/g38qjfqFLOVPvwjIvFFdNziEC5S65jmjPw5r6A//QH+W91akh9irMwjDN8zKUTak6W9EsAv4m/7Wnw0UQ==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@eslint/js@9.29.0':
+    resolution: {integrity: sha512-3PIF4cBw/y+1u2EazflInpV+lYsSG0aByVIQzAgb1m1MhHFSbqTyNqtBKHgWf/9Ykud+DhILS9EGkmekVhbKoQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@eslint/object-schema@2.1.6':
@@ -1942,6 +1967,10 @@ packages:
     resolution: {integrity: sha512-UMz42UD0UY0EApS0ZL9o1XnLhSTtvvvLe5Dc2H2O56fvRZi+KulDyf5ctDhhtYJBGKStV2FL1fy6253cmLgqVQ==}
     engines: {node: '>=4'}
 
+  postcss-selector-parser@7.1.0:
+    resolution: {integrity: sha512-8sLjZwK0R+JlxlYcTuVnyT2v+htpdrjDOKuMcOVdYjt52Lh8hWRYpxBPoKx/Zg+bcjc3wx6fmQevMmUztS/ccA==}
+    engines: {node: '>=4'}
+
   postcss@8.4.49:
     resolution: {integrity: sha512-OCVPnIObs4N29kxTjzLfUryOkvZEq+pf8jTF0lg8E7uETuWHA+v7j3c/xJmiqpX450191LlmZfUKkXxkTry7nA==}
     engines: {node: ^10 || ^12 || >=14}
@@ -2223,6 +2252,15 @@ packages:
   svelte-eslint-parser@0.43.0:
     resolution: {integrity: sha512-GpU52uPKKcVnh8tKN5P4UZpJ/fUDndmq7wfsvoVXsyP+aY0anol7Yqo01fyrlaWGMFfm4av5DyrjlaXdLRJvGA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.37.0 || ^4.0.0 || ^5.0.0
+    peerDependenciesMeta:
+      svelte:
+        optional: true
+
+  svelte-eslint-parser@1.2.0:
+    resolution: {integrity: sha512-mbPtajIeuiyU80BEyGvwAktBeTX7KCr5/0l+uRGLq1dafwRNrjfM5kHGJScEBlPG3ipu6dJqfW/k0/fujvIEVw==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
     peerDependencies:
       svelte: ^3.37.0 || ^4.0.0 || ^5.0.0
     peerDependenciesMeta:
@@ -2940,6 +2978,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@9.19.0': {}
+
+  '@eslint/js@9.29.0': {}
 
   '@eslint/object-schema@2.1.6': {}
 
@@ -4581,6 +4621,11 @@ snapshots:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
 
+  postcss-selector-parser@7.1.0:
+    dependencies:
+      cssesc: 3.0.0
+      util-deprecate: 1.0.2
+
   postcss@8.4.49:
     dependencies:
       nanoid: 3.3.7
@@ -4898,6 +4943,17 @@ snapshots:
       espree: 9.6.1
       postcss: 8.4.49
       postcss-scss: 4.0.9(postcss@8.4.49)
+    optionalDependencies:
+      svelte: 5.19.3
+
+  svelte-eslint-parser@1.2.0(svelte@5.19.3):
+    dependencies:
+      eslint-scope: 8.2.0
+      eslint-visitor-keys: 4.2.0
+      espree: 10.3.0
+      postcss: 8.4.49
+      postcss-scss: 4.0.9(postcss@8.4.49)
+      postcss-selector-parser: 7.1.0
     optionalDependencies:
       svelte: 5.19.3
 
