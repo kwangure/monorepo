@@ -40,6 +40,7 @@ export default [
 			],
 			// Tries to correct `type`s to interfaces, but `type` fail index signature check
 			'@typescript-eslint/consistent-type-definitions': 'off',
+			'@typescript-eslint/prefer-for-of': 'off',
 			'require-await': 'error',
 			...prettier.rules,
 		},
